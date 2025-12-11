@@ -9,13 +9,13 @@ Performance Engineers
 Architects
 Databricks Optimization Teams
 
-✨ Key Features
+Key Features:
 Deep Execution Plan Understanding
 Tree-based plan parsing
 JSON operator analysis resilient to DBR version changes
 Extracts shuffles, joins, window functions, aggregations, sorting, expands, exchanges, AQE transformations
 
-📊 Automated Bottleneck Detection
+Automated Bottleneck Detection:
 Over 60 built-in detection rules:
 Skew
 Bad repartitioning patterns
@@ -34,7 +34,7 @@ Broadcast feasibility
 Memory-spill risk analysis
 Shuffle-volume severity
 
-📈 Structured Output
+Structured Output:
 Results come as a Spark DataFrame:
 category
 severity
@@ -89,7 +89,7 @@ JSON plan (critical)
 df.queryExecution.executedPlan.toJSON()
 
 
-➡️ This is where shuffle, sort, exchange, repartition, window, and join operators are extracted.
+This is where shuffle, sort, exchange, repartition, window, and join operators are extracted.
 
 Step 3 — Convert Plan JSON to a Tree
 
